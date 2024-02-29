@@ -42,7 +42,15 @@
           Infografía
         </h2>
         <p>
-            <img class="img-fluid" width="100%" src="./images/patentamiento.jpg"></img>
+          <?php
+          if ($vedae == 0) {
+            echo '<img class="img-fluid" width="100%" src="./images/patentamiento.jpg"></img>';
+          } else {
+            echo '<p>Infografía</p>';
+          }
+          ?>
+
+            
         </p>
       </div>
     </div>
